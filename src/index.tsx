@@ -1,8 +1,8 @@
 import React from 'react'
 import {
-  extendContext,
   createElementObject,
-  createPathComponent,
+  createLayerComponent,
+  extendContext,
   LeafletContextInterface,
 } from '@react-leaflet/core'
 import L, { LeafletMouseEventHandlerFn } from 'leaflet'
@@ -20,6 +20,7 @@ import 'leaflet.markercluster'
 //   shadowUrl: new URL('./assets/marker-shadow.png', import.meta.url).href,
 // })
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 type ClusterType = { [key in string]: any }
 
 type ClusterEvents = {
@@ -75,7 +76,7 @@ const updateMarkerCluster = (
   // }
 }
 
-const MarkerClusterGroup = createPathComponent<L.MarkerClusterGroup, MarkerClusterControl>(
+const MarkerClusterGroup = createLayerComponent<L.MarkerClusterGroup, MarkerClusterControl>(
   createMarkerClusterGroup,
   updateMarkerCluster,
 )

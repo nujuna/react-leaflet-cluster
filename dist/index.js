@@ -1,4 +1,4 @@
-import { extendContext, createElementObject, createPathComponent, } from '@react-leaflet/core';
+import { createElementObject, createLayerComponent, extendContext, } from '@react-leaflet/core';
 import L from 'leaflet';
 import 'leaflet.markercluster';
 function getPropsAndEvents(props) {
@@ -31,5 +31,5 @@ const updateMarkerCluster = (instance, props, prevProps) => {
     //   instance.setBounds(getBounds(props))
     // }
 };
-const MarkerClusterGroup = createPathComponent(createMarkerClusterGroup, updateMarkerCluster);
+const MarkerClusterGroup = createLayerComponent(createMarkerClusterGroup, updateMarkerCluster);
 export default MarkerClusterGroup;

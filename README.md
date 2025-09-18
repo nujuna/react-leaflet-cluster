@@ -1,10 +1,22 @@
-# react-leaflet-cluster [![npm version](https://img.shields.io/npm/v/react-leaflet-cluster.svg)](https://www.npmjs.com/package/react-leaflet-cluster)
-- [x] React 19 support
-- [x] React-leaflet v4 support
-- [x] Typescript support
-- [x] Next.js compatibility
+# react-leaflet-cluster
 
-## Breaking Changes in v3.0.0
+React wrapper for Leaflet marker clustering.
+
+[![npm version](https://img.shields.io/npm/v/react-leaflet-cluster.svg)](https://www.npmjs.com/package/react-leaflet-cluster)
+[![React](https://img.shields.io/badge/React-19.x-blue)](https://react.dev/)
+[![Leaflet](https://img.shields.io/badge/Leaflet-1.9.x-brightgreen)](https://leafletjs.com/)
+[![React Leaflet](https://img.shields.io/badge/React%20Leaflet-5.x-orange)](https://react-leaflet.js.org/)
+
+---
+
+## ✨ What's New
+
+- ✅ Support for **React 19.x**
+- ✅ Support for **Leaflet 1.9.x**
+- ✅ Support for **React-Leaflet 5.x**
+- ✅ Built with **TypeScript 5+** (with type definitions in `dist/index.d.ts`)
+
+---
 
 **CSS imports are now required manually** - The package no longer automatically imports CSS files to prevent Next.js build issues. You must now import the CSS files separately:
 
@@ -28,16 +40,6 @@ React-leaflet-cluster is a plugin for react-leaflet. A wrapper component of Leaf
 
 Or with npm:
 `npm i react-leaflet-cluster`
-
-#### Prerequisites
-
-Make sure that you've installed react-leaflet and leaflet.
-
-```json
-"react": "18.x",
-"leaflet": "1.8.x",
-"react-leaflet": "4.0.x"
-```
 
 #### CSS Import
 
